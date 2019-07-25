@@ -1,0 +1,18 @@
+set nocompatible
+syntax on
+set number
+set belloff=all
+set incsearch
+set statusline=%F%m%r%h%w\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}\ %=(%{&ff}){%Y}\ [%l,%v][%p%%]
+set runtimepath+=~/.dotfiles/vim/bundle/vim-tail
+set laststatus=2
+set hlsearch
+set tabstop=4
+set viminfo='1,/50,n$HOME/.dotfiles/vim/viminfo-view
+set relativenumber
+set clipboard=unnamed,unnamedplus
+so ~/.vim/bundle/colors/colors/atom-dark-256.vim
+hi StatusLine ctermfg=yellow ctermbg=0
+nnoremap q :q<cr>
+nnoremap / /\c\v
+nnoremap r :e<cr>
