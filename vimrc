@@ -3,26 +3,29 @@
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 call plug#begin('~/.vim/bundle/active')
-Plug 'Townk/vim-autoclose'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'cosminadrianpopescu/colors'
-Plug 'svermeulen/vim-easyclip'
-Plug 'easymotion/vim-easymotion'
-Plug 'mattn/emmet-vim'
-Plug 'cosminadrianpopescu/filesync'
-Plug 'Valloric/MatchTagAlways'
-Plug 'cosminadrianpopescu/airline-tabs'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'cosminadrianpopescu/vim-syntax'
-Plug 'jszakmeister/vim-togglecursor'
-Plug 'leafgarland/typescript-vim'
-Plug 'mbbill/undotree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-obsession'
-Plug 'cosminadrianpopescu/vim-tail'
+Plug 'https://gitlab.com/my-vim-plugins/vim-autoclose-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/coc.nvim-mirror', {'do': 'yarn install --frozen-lockfile'}
+Plug 'https://gitlab.com/my-vim-plugins/colors-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-easyclip-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-easymotion-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/emmet-vim-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/filesync-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/MatchTagAlways-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/airline-tabs-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-repeat-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-surround-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-syntax-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-togglecursor-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/typescript-vim-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/undotree-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-airline-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-airline-themes-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-endwise-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-obsession-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-tail-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/ctrlp-vim-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/ctrlp-jumps-mirror'
+Plug 'https://gitlab.com/my-vim-plugins/vim-ctrlposession-mirror'
 call plug#end()
 set encoding=utf-8
 
@@ -118,9 +121,7 @@ let g:ctrlp_match_func = {'match': 'CtrlpMatch'}
 let g:togglecursor_leave = 'block'
 let g:sync_default_args = '--recursive'
 let g:EasyMotion_skipfoldedline = 0
-let g:ctrlp_funky_matchtype = 'path'
-let g:ctrlp_funky_syntax_highlight = 1
-let g:ctrlp_extensions = ['symbols', 'java_types', 'jumps', 'sw_profiles']
+let g:ctrlp_extensions = ['java_types', 'jumps']
 let g:ctrlp_regexp = 1
 let g:sw_delete_tmp = 0
 let g:sw_save_resultsets = 1

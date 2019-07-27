@@ -1,19 +1,2 @@
 {
-    "languageserver": {
-        "phplang": {
-            "command": "php-lsp",
-            "filetypes": ["php"],
-            "trace.server": "verbose"
-        },
-        "bash": {
-            "command": "/home/lixa/programs/bash-language-server/node_modules/.bin/bash-language-server",
-            "args": ["start"],
-            "filetypes": ["sh"],
-            "ignoredRootPaths": ["~"]
-        }
-    },
-    "java.signatureHelp.enabled": true,
-    "java.trace.server": "verbose",
-    "coc.source.around.enable": false,
-    "tsserver.trace.server": "verbose"
 }
